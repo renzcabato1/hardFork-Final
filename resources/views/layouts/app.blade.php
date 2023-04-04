@@ -27,7 +27,7 @@
 	<link rel="stylesheet" href="{{asset('home/css/style.css')}}"/>
 
 </head>
-<body class='bg-dark'>
+<body >
         <div id="preloder">
             <div class="loader"></div>
         </div>

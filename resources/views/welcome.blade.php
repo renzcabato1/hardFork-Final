@@ -44,13 +44,17 @@
 
 
 <!-- Hero section -->
-<section class="hero-section">
+<section class="about-section spad">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 hero-text text-center">
+            <div class="col-md-12 hero-text text-center mb-">
                 <span class='text-white' style='font-size:129px;'>Collect Whiskey</span><br>
                 <span class='text-white' style='font-size:27px;'>Buy and sell Whiskey NFTs</span>
                 
+                
+            </div>
+            <div class="col-md-12 text-center">
+                <img class="card-img w-100 h-100" src="{{asset('img/images.png')}}" style='height:100%'   alt="Card image">
                 
             </div>
         </div>
@@ -59,367 +63,417 @@
 <!-- Hero section end -->
 
 
+
 <!-- About section -->
 <section class="about-section spad">
-    <div class="container">
+    <div class="container text-white">
         <div class="row">
-            <div class="col-lg-6 offset-lg-6 about-text">
-                <h2>What is Bitcoin</h2>
-                <h5>Bitcoin is an innovative payment network and a new kind of money.</h5>
-                <p>Bitcoin is one of the most important inventions in all of human history. For the first time ever, anyone can send or receive any amount of money with anyone else, anywhere on the planet, conveniently and without restriction. It’s the dawn of a better, more free world.</p>
-                <a href="" class="site-btn sb-gradients sbg-line mt-5">Get Started</a>
+            <div class="col-lg-12 offset-lg-12">
+                <strong><span class='text-white' style='font-size:46px;'> Live Auctions</span></strong>
             </div>
         </div>
-        <div class="about-img">
-            <img src="img/about-img.png" alt="">
+        <div class="row">
+            <div class="col-lg-4 col-4">
+                <figure class="figure">
+                    <div class="card bg-dark text-white">
+                        <img class="card-img" src="{{asset('img/product2.png')}}" alt="Card image">
+                        <div class=" d-flex flex-column" style='padding:0px;' >
+                            {{-- <h5 class="card-title">Title</h5> --}}
+                            <div class="mt-auto text-center w-100 radius" style="font-size:27px;background-color: rgba(66, 66, 66, 100);">Whiskey</div>
+                            <div class='row m-0' style='background-color: rgba(66, 66, 66, 100);'>
+                                <div class="col-lg-3 col-3 "></div>
+                                <div class="col-lg-2 col-2 text-center bg-white text-dark rounded m-1 p-0"><b><span class='bg-white text-dark rounded' style='font-size:24px;' id="hours"></span></b> <span class='text-dark rounded' style='font-size:10px;'>hr</span> </div>
+                               
+                                <div class="col-lg-2 col-2 text-center bg-white text-dark rounded m-1 p-0"><b><span class='bg-white text-dark rounded' style='font-size:24px;' id="minutes"></span></b> <span class='text-dark rounded' style='font-size:10px;'>mi</span> </div>
+                              
+                                <div class="col-lg-2 col-2 text-center bg-white text-dark rounded m-1 p-0"><b><span class='bg-white text-dark rounded' style='font-size:24px;' id="seconds"></span> </b><span class='text-dark rounded' style='font-size:10px;'>sec</span>  </div>
+                                <div class="col-lg-3 col-3 "></div>
+                            </div>
+                            <div class='row m-0' style='background-color: rgba(66, 66, 66, 100);'>
+                                <div class="col-lg-12 col-12 text-center " style="font-size:27px;">Current Bid : $ 0.00</div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </figure>
+            </div>
+            <div class="col-lg-4 col-4">
+                <figure class="figure">
+                    <div class="card bg-dark text-white">
+                        <img class="card-img" src="{{asset('img/product2.png')}}" alt="Card image">
+                        <div class=" d-flex flex-column" style='padding:0px;' >
+                            {{-- <h5 class="card-title">Title</h5> --}}
+                            <div class="mt-auto text-center w-100 radius" style="font-size:27px;background-color: rgba(66, 66, 66, 100);">Whiskey</div>
+                            <div class='row m-0' style='background-color: rgba(66, 66, 66, 100);'>
+                                <div class="col-lg-3 col-3 "></div>
+                                <div class="col-lg-2 col-2 text-center bg-white text-dark rounded m-1 p-0"><b><span class='bg-white text-dark rounded' style='font-size:24px;' id="hours1"></span></b> <span class='text-dark rounded' style='font-size:10px;'>hr</span> </div>
+                               
+                                <div class="col-lg-2 col-2 text-center bg-white text-dark rounded m-1 p-0"><b><span class='bg-white text-dark rounded' style='font-size:24px;' id="minutes1"></span></b> <span class='text-dark rounded' style='font-size:10px;'>mi</span> </div>
+                              
+                                <div class="col-lg-2 col-2 text-center bg-white text-dark rounded m-1 p-0"><b><span class='bg-white text-dark rounded' style='font-size:24px;' id="seconds1"></span></b> <span class='text-dark rounded' style='font-size:10px;'>sec</span>  </div>
+                                <div class="col-lg-3 col-3 "></div>
+                            </div>
+                            <div class='row m-0' style='background-color: rgba(66, 66, 66, 100);'>
+                                <div class="col-lg-12 col-12 text-center " style="font-size:27px;">Current Bid : $ 0.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </figure>
+            </div>
+            <div class="col-lg-4 col-4">
+                <figure class="figure">
+                    <div class="card bg-dark text-white">
+                        <img class="card-img" src="{{asset('img/product2.png')}}" alt="Card image">
+                        <div class=" d-flex flex-column" style='padding:0px;' >
+                            {{-- <h5 class="card-title">Title</h5> --}}
+                            <div class="mt-auto text-center w-100 radius" style="font-size:27px;background-color: rgba(66, 66, 66, 100);">Whiskey</div>
+                            <div class='row m-0' style='background-color: rgba(66, 66, 66, 100);'>
+                                <div class="col-lg-3 col-3 "></div>
+                                <div class="col-lg-2 col-2 text-center bg-white text-dark rounded m-1 p-0"><b><span class='bg-white text-dark rounded' style='font-size:24px;' id="hours2"></span></b> <span class='text-dark rounded' style='font-size:10px;'>hr</span> </div>
+                               
+                                <div class="col-lg-2 col-2 text-center bg-white text-dark rounded m-1 p-0"><b><span class='bg-white text-dark rounded' style='font-size:24px;' id="minutes2"></span></b> <span class='text-dark rounded' style='font-size:10px;'>mi</span> </div>
+                              
+                                <div class="col-lg-2 col-2 text-center bg-white text-dark rounded m-1 p-0"><b><span class='bg-white text-dark rounded' style='font-size:24px;' id="seconds2"></span></b> <span class='text-dark rounded' style='font-size:10px;'>sec</span>  </div>
+                                <div class="col-lg-3 col-3 "></div>
+                            </div>
+                            <div class='row m-0' style='background-color: rgba(66, 66, 66, 100);'>
+                                <div class="col-lg-12 col-12 text-center " style="font-size:27px;">Current Bid : $ 0.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </figure>
+            </div>
+       
+            
+        </div>
+    </div>
+</section>
+<section class="about-section spad">
+    <div class="container text-white">
+        <div class="row mb-5">
+            <div class="col-lg-12 offset-lg-12">
+                <strong><span class='text-white' style='font-size:46px;'> Top collections over last 7 days</span></strong>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-4">
+                <figure class="figure">
+                    <div class="card bg-dark text-white border-0">
+                        <img class="card-img" src="{{asset('img/product2.png')}}" alt="Card image">
+                        <div class=" d-flex flex-column" style='padding:0px;' >
+                            {{-- <h5 class="card-title">Title</h5> --}}
+                            <div class='row m-0' style='background-color: rgba(0, 0, 0, 100);'>
+                                <div class="col-lg-3 col-3" style="font-size:27px;"><img src="{{asset('img/renz.png')}}" class="rounded-circle" style="width: 150px;" alt="Avatar" /></div>
+                                <div class="col-lg-6 col-6" style="font-size:15px;">Renz Cabato <svg class='text-primary' xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                                  </svg>
+                                <br>
+                                <small>1 in the stock</small>
+                                </div>
+                                <div class="col-lg-3 col-3" style="font-size:10px;">Highest Bid<br>
+                                    
+                                    <img src = "{{asset('img/eth.png')}}" alt="ETH" style="width: 10px;" /> &nbsp; 0.25 ETH</div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </figure>
+            </div>
+            <div class="col-lg-4 col-4 border-right">
+                <figure class="figure">
+                    <div class="card bg-dark text-white border-0">
+                        <div class=" d-flex flex-column" style='padding:0px;' >
+                            {{-- <h5 class="card-title">Title</h5> --}}
+                            <div class='row m-0 pb-2' style='background-color: rgba(0, 0, 0, 100);'>
+                                    <div class="col-lg-5 col-5 " style="font-size:27px;"><img src="{{asset('img/product2.png')}}" class="border-rounded" style="width: 150px;border-radius: 20px;" alt="Avatar" />
+                                    </div>
+                                        <div class="col-lg-7 col-7" style="font-size:15px;"> 
+                                            <div class='row m-0' style='background-color: rgba(0, 0, 0, 100);'>
+                                                <div class="col-lg-12 col-12 text-left pb-2" > Whiskey</div>
+                                            </div>
+                                            <div class='row m-0' style='background-color: rgba(0, 0, 0, 100);'>
+                                                <div class="col-lg-6 col-6 text-left" ><img src="{{asset('img/renz.png')}}" class="rounded-circle" style="width: 300px;" alt="Avatar" /></div>
+                                            
+                                                <div class="col-lg-6 col-6  center " style="font-size:10px;text-align: center;">
+                                                    
+                                                    <img src = "{{asset('img/eth.png')}}" alt="ETH" style="width: 10px;" /> &nbsp; 0.25 ETH
+                                                </div>
+                                            </div>
+                                    </div>
+                            </div>
+                            <div class='row m-0 pb-2' style='background-color: rgba(0, 0, 0, 100);'>
+                                    <div class="col-lg-5 col-5 " style="font-size:27px;"><img src="{{asset('img/product2.png')}}" class="border-rounded" style="width: 150px;border-radius: 20px;" alt="Avatar" />
+                                    </div>
+                                        <div class="col-lg-7 col-7" style="font-size:15px;"> 
+                                            <div class='row m-0' style='background-color: rgba(0, 0, 0, 100);'>
+                                                <div class="col-lg-12 col-12 text-left pb-2" > Whiskey</div>
+                                            </div>
+                                            <div class='row m-0' style='background-color: rgba(0, 0, 0, 100);'>
+                                                <div class="col-lg-6 col-6 text-left" ><img src="{{asset('img/renz.png')}}" class="rounded-circle" style="width: 300px;" alt="Avatar" /></div>
+                                            
+                                                <div class="col-lg-6 col-6  center " style="font-size:10px;text-align: center;">
+                                                    
+                                                    <img src = "{{asset('img/eth.png')}}" alt="ETH" style="width: 10px;" /> &nbsp; 0.25 ETH
+                                                </div>
+                                            </div>
+                                    </div>
+                            </div>
+                            <div class='row m-0 pb-2' style='background-color: rgba(0, 0, 0, 100);'>
+                                    <div class="col-lg-5 col-5 " style="font-size:27px;"><img src="{{asset('img/product2.png')}}" class="border-rounded" style="width: 150px;border-radius: 20px;" alt="Avatar" />
+                                    </div>
+                                        <div class="col-lg-7 col-7" style="font-size:15px;"> 
+                                            <div class='row m-0' style='background-color: rgba(0, 0, 0, 100);'>
+                                                <div class="col-lg-12 col-12 text-left pb-2" > Whiskey</div>
+                                            </div>
+                                            <div class='row m-0' style='background-color: rgba(0, 0, 0, 100);'>
+                                                <div class="col-lg-6 col-6 text-left" ><img src="{{asset('img/renz.png')}}" class="rounded-circle" style="width: 300px;" alt="Avatar" /></div>
+                                            
+                                                <div class="col-lg-6 col-6  center " style="font-size:10px;text-align: center;">
+                                                    
+                                                    <img src = "{{asset('img/eth.png')}}" alt="ETH" style="width: 10px;" /> &nbsp; 0.25 ETH
+                                                </div>
+                                            </div>
+                                    </div>
+                            </div>
+                         
+                            
+                            
+                        </div>
+                    </div>
+                </figure>
+            </div>
+            <div class="col-lg-4 col-4">
+                <figure class="figure">
+                    <div class="card bg-dark text-white border-0">
+                        <div class=" d-flex flex-column" style='background-color: rgba(0, 0, 0, 100);' >
+                            {{-- <h5 class="card-title">Title</h5> --}}
+                            <div class="row mb-2">
+                                <div class="col-lg-12 offset-lg-12">
+                                    <strong><span class='text-white' style='font-size:20px;'> Top collections over</span></strong>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-lg-12 offset-lg-12">
+                                    <strong><span class='text-white' style='font-size:16px;'> Last 7 days</span></strong>
+                                </div>
+                            </div>
+                            <div class='row m-0 pb-2' style='background-color: rgba(0, 0, 0, 100);'>
+                                <div class="col-lg-2 col-2 align-middle center" > <span class='align-middle center'>1.</span></div>
+                              
+                                <div class="col-lg-4 col-4" style="font-size:27px;"><img src="{{asset('img/barrel.png')}}" class="rounded" style="width: 100px;" alt="Avatar" /></div>
+                              
+                                <div class="col-lg-6 col-6" style="font-size:10px;">Highest Bid<br>
+                                    
+                                    <img src = "{{asset('img/eth.png')}}" alt="ETH" style="width: 10px;" /> &nbsp; 0.25 ETH</div>
+                            </div>
+                            <div class='row m-0 pb-2' style='background-color: rgba(0, 0, 0, 100);'>
+                                <div class="col-lg-2 col-2 center" >2.</div>
+                              
+                                <div class="col-lg-4 col-4" style="font-size:27px;"><img src="{{asset('img/barrel.png')}}" class="rounded" style="width: 100px;" alt="Avatar" /></div>
+                              
+                                <div class="col-lg-6 col-6" style="font-size:10px;">Highest Bid<br>
+                                    
+                                    <img src = "{{asset('img/eth.png')}}" alt="ETH" style="width: 10px;" /> &nbsp; 0.25 ETH</div>
+                            </div>
+                            <div class='row m-0 pb-2' style='background-color: rgba(0, 0, 0, 100);'>
+                                <div class="col-lg-2 col-2 center" > 3.</div>
+                              
+                                <div class="col-lg-4 col-4" style="font-size:27px;"><img src="{{asset('img/barrel.png')}}" class="rounded" style="width: 100px;" alt="Avatar" /></div>
+                              
+                                <div class="col-lg-6 col-6" style="font-size:10px;">Highest Bid<br>
+                                    
+                                    <img src = "{{asset('img/eth.png')}}" alt="ETH" style="width: 10px;" /> &nbsp; 0.25 ETH</div>
+                            </div>
+                            <div class='row m-0 pb-2' style='background-color: rgba(0, 0, 0, 100);'>
+                                <div class="col-lg-2 col-2 center" >4.</div>
+                              
+                                <div class="col-lg-4 col-4" style="font-size:27px;"><img src="{{asset('img/barrel.png')}}" class="rounded" style="width: 100px;" alt="Avatar" /></div>
+                              
+                                <div class="col-lg-6 col-6" style="font-size:10px;">Highest Bid<br>
+                                    
+                                    <img src = "{{asset('img/eth.png')}}" alt="ETH" style="width: 10px;" /> &nbsp; 0.25 ETH</div>
+                            </div>
+                            <div class='row m-0 pb-2' style='background-color: rgba(0, 0, 0, 100);'>
+                                <div class="col-lg-2 col-2 center" >5.</div>
+                              
+                                <div class="col-lg-4 col-4" style="font-size:27px;"><img src="{{asset('img/barrel.png')}}" class="rounded" style="width: 100px;" alt="Avatar" /></div>
+                              
+                                <div class="col-lg-6 col-6" style="font-size:10px;">Highest Bid<br>
+                                    
+                                    <img src = "{{asset('img/eth.png')}}" alt="ETH" style="width: 10px;" /> &nbsp; 0.25 ETH</div>
+                            </div>
+                            <div class='row m-0 pb-2' style='background-color: rgba(0, 0, 0, 100);'>
+                                <div class="col-lg-2 col-2 center" >6.</div>
+                              
+                                <div class="col-lg-4 col-4" style="font-size:27px;"><img src="{{asset('img/barrel.png')}}" class="rounded" style="width: 100px;" alt="Avatar" /></div>
+                              
+                                <div class="col-lg-6 col-6" style="font-size:10px;">Highest Bid<br>
+                                    
+                                    <img src = "{{asset('img/eth.png')}}" alt="ETH" style="width: 10px;" /> &nbsp; 0.25 ETH</div>
+                            </div>
+                        </div>
+                    </div>
+                </figure>
+            </div>
+            
+       
+            
+        </div>
+    </div>
+</section>
+<section class="about-section spad">
+    <div class="container text-white">
+        <div class="row mb-4">
+            <div class="col-lg-12 offset-lg-12">
+                <strong><span class='text-white' style='font-size:46px;'> Buy and sell your NFTs</span></strong>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-wallet" viewBox="0 0 16 16">
+                    <path d="M0 3a2 2 0 0 1 2-2h13.5a.5.5 0 0 1 0 1H15v2a1 1 0 0 1 1 1v8.5a1.5 1.5 0 0 1-1.5 1.5h-12A2.5 2.5 0 0 1 0 12.5V3zm1 1.732V12.5A1.5 1.5 0 0 0 2.5 14h12a.5.5 0 0 0 .5-.5V5H2a1.99 1.99 0 0 1-1-.268zM1 3a1 1 0 0 0 1 1h12V2H2a1 1 0 0 0-1 1z"/>
+                  </svg>
+                  <br>
+                    <strong><span class='text-white' style='font-size:16px;'> Set up your wallet</span></strong>  <br>
+                        <br>
+                        <span class='text-white' style='font-size:16px;'> Once you’ve set up your wallet of choice, connect it to OpenSea by clicking the wallet icon in the top right corner. Learn about the wallets we support.</span>
+            </div>
+            <div class="col-lg-3 col-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
+                    <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                  </svg>
+                  <br>
+                    <strong><span class='text-white' style='font-size:16px;'> Select your collection</span></strong>  <br>
+                        <br>
+                        <span class='text-white' style='font-size:16px;'> Click My Collections and set up your collection. Add social links, a description, profile & banner images, and set a secondary sales fee.</span>
+            </div>
+            <div class="col-lg-3 col-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-archive" viewBox="0 0 16 16">
+                    <path d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1V2zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5H2zm13-3H1v2h14V2zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+                  <br>
+                    <strong><span class='text-white' style='font-size:16px;'> Buy NFT Whiskey</span></strong>  <br>
+                    <br>
+                    <span class='text-white' style='font-size:16px;'> Each NFT corresponds to a physical bottle. Consumers have the ability to exchange the digital version for the physical version. </span>
+            </div>
+            <div class="col-lg-3 col-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-stopwatch" viewBox="0 0 16 16">
+                    <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"/>
+                    <path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z"/>
+                  </svg>
+                  <br>
+                    <strong><span class='text-white' style='font-size:16px;'> List them for sale</span></strong>  <br>
+                    <br>
+                    <span class='text-white' style='font-size:16px;'> Choose between auctions, fixed-price listings, and declining-price listings. You choose how you want to sell your NFTs, and we help you sell them!</span>
+            </div>
+           
+        </div>
+    </div>
+</section>
+<section class="about-section spad">
+    <div class="container text-white">
+        <div class="row mb-4">
+            <div class="col-lg-12 offset-lg-12">
+                <strong><span class='text-white' style='font-size:46px;'> Marketplace</span></strong>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-3 border mr-1">
+                <figure class="figure">
+                    <div class="card bg-dark text-white border-0">
+                        <img class="card-img" src="{{asset('img/product2.png')}}" alt="Card image">
+                        <div class=" d-flex flex-column" style='padding:0px;' >
+                            {{-- <h5 class="card-title">Title</h5> --}}
+                            <div class='row m-0' style='background-color: rgba(0, 0, 0, 100);'>
+                                <div class="col-lg-3 col-3" style="font-size:20px;"><img src="{{asset('img/renz.png')}}" class="rounded-circle" style="width: 150px;" alt="Avatar" /></div>
+                                <div class="col-lg-6 col-6" style="font-size:10px;">Renz Cabato <svg class='text-primary' xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                                  </svg>
+                                <br>
+                                </div>
+                                <div class="col-lg-3 col-3" style="font-size:10px;">
+                                    
+                                    <img src = "{{asset('img/eth.png')}}" alt="ETH" style="width: 8px;" /> &nbsp; 0.25</div>
+                            </div>
+                            <div class='row m-0' style='background-color: rgba(0, 0, 0, 100);'>
+                                <div class="col-lg-12 col-12 text-right"><button type="button" class="btn btn-secondary  btn-sm">Buy Now</button></div>
+                               
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </figure>
+            </div>
+            <div class="col-lg-3 col-3 border mr-1">
+                <figure class="figure">
+                    <div class="card bg-dark text-white border-0">
+                        <img class="card-img" src="{{asset('img/product2.png')}}" alt="Card image">
+                        <div class=" d-flex flex-column" style='padding:0px;' >
+                            {{-- <h5 class="card-title">Title</h5> --}}
+                            <div class='row m-0' style='background-color: rgba(0, 0, 0, 100);'>
+                                <div class="col-lg-3 col-3" style="font-size:20px;"><img src="{{asset('img/renz.png')}}" class="rounded-circle" style="width: 150px;" alt="Avatar" /></div>
+                                <div class="col-lg-6 col-6" style="font-size:10px;">Renz Cabato <svg class='text-primary' xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                                  </svg>
+                                <br>
+                                </div>
+                                <div class="col-lg-3 col-3" style="font-size:10px;">
+                                    
+                                    <img src = "{{asset('img/eth.png')}}" alt="ETH" style="width: 8px;" /> &nbsp; 0.25</div>
+                            </div>
+                            <div class='row m-0' style='background-color: rgba(0, 0, 0, 100);'>
+                                <div class="col-lg-12 col-12 text-right"><button type="button" class="btn btn-secondary  btn-sm">Buy Now</button></div>
+                               
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </figure>
+            </div>
+            <div class="col-lg-3 col-3 border mr-1">
+                <figure class="figure">
+                    <div class="card bg-dark text-white border-0">
+                        <img class="card-img" src="{{asset('img/product2.png')}}" alt="Card image">
+                        <div class=" d-flex flex-column" style='padding:0px;' >
+                            {{-- <h5 class="card-title">Title</h5> --}}
+                            <div class='row m-0' style='background-color: rgba(0, 0, 0, 100);'>
+                                <div class="col-lg-3 col-3" style="font-size:20px;"><img src="{{asset('img/renz.png')}}" class="rounded-circle" style="width: 150px;" alt="Avatar" /></div>
+                                <div class="col-lg-6 col-6" style="font-size:10px;">Renz Cabato <svg class='text-primary' xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                                  </svg>
+                                <br>
+                                </div>
+                                <div class="col-lg-3 col-3" style="font-size:10px;">
+                                    
+                                    <img src = "{{asset('img/eth.png')}}" alt="ETH" style="width: 8px;" /> &nbsp; 0.25</div>
+                            </div>
+                            <div class='row m-0' style='background-color: rgba(0, 0, 0, 100);'>
+                                <div class="col-lg-12 col-12 text-right"><button type="button" class="btn btn-secondary  btn-sm">Buy Now</button></div>
+                               
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </figure>
+            </div>
+            
+           
         </div>
     </div>
 </section>
 <!-- About section end -->
 
 
-<!-- Features section -->
-<section class="features-section spad gradient-bg">
-    <div class="container text-white">
-        <div class="section-title text-center">
-            <h2>Our Features</h2>
-            <p>Bitcoin is the simplest way to exchange money at very low cost.</p>
-        </div>
-        <div class="row">
-            <!-- feature -->
-            <div class="col-md-6 col-lg-4 feature">
-                <i class="ti-mobile"></i>
-                <div class="feature-content">
-                    <h4>Mobile Apps</h4>
-                    <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-                    <a href="" class="readmore">Readmore</a>
-                </div>
-            </div>
-            <!-- feature -->
-            <div class="col-md-6 col-lg-4 feature">
-                <i class="ti-shield"></i>
-                <div class="feature-content">
-                    <h4>Safe & Secure</h4>
-                    <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-                    <a href="" class="readmore">Readmore</a>
-                </div>
-            </div>
-            <!-- feature -->
-            <div class="col-md-6 col-lg-4 feature">
-                <i class="ti-wallet"></i>
-                <div class="feature-content">
-                    <h4>Wallet</h4>
-                    <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-                    <a href="" class="readmore">Readmore</a>
-                </div>
-            </div>
-            <!-- feature -->
-            <div class="col-md-6 col-lg-4 feature">
-                <i class="ti-headphone-alt"></i>
-                <div class="feature-content">
-                    <h4>Experts Support</h4>
-                    <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-                    <a href="" class="readmore">Readmore</a>
-                </div>
-            </div>
-            <!-- feature -->
-            <div class="col-md-6 col-lg-4 feature">
-                <i class="ti-reload"></i>
-                <div class="feature-content">
-                    <h4>Instant Exchange</h4>
-                    <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-                    <a href="" class="readmore">Readmore</a>
-                </div>
-            </div>
-            <!-- feature -->
-            <div class="col-md-6 col-lg-4 feature">
-                <i class="ti-panel"></i>
-                <div class="feature-content">
-                    <h4>Recuring Buys</h4>
-                    <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-                    <a href="" class="readmore">Readmore</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Features section end -->
-
-
-<!-- Process section -->
-<section class="process-section spad">
-    <div class="container">
-        <div class="section-title text-center">
-            <h2>Get Started With Bitcoin</h2>
-            <p>Start learning about Bitcoin with interactive tutorials. It’s fun, easy, and takes only a few minutes! </p>
-        </div>
-        <div class="row">
-            <div class="col-md-4 process">
-                <div class="process-step">
-                    <figure class="process-icon">
-                        <img src="img/process-icons/1.png" alt="#">
-                    </figure>
-                    <h4>Create Your Wallet</h4>
-                    <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-                </div>
-            </div>
-            <div class="col-md-4 process">
-                <div class="process-step">
-                    <figure class="process-icon">
-                        <img src="img/process-icons/2.png" alt="#">
-                    </figure>
-                    <h4>Create Your Wallet</h4>
-                    <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-                </div>
-            </div>
-            <div class="col-md-4 process">
-                <div class="process-step">
-                    <figure class="process-icon">
-                        <img src="img/process-icons/3.png" alt="#">
-                    </figure>
-                    <h4>Create Your Wallet</h4>
-                    <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Process section end -->
-
-
-<!-- Fact section -->
-<section class="fact-section gradient-bg">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 col-md-6 col-lg-3">
-                <div class="fact">
-                    <h2>60</h2>
-                    <p>Support <br> Countries</p>
-                    <i class="ti-basketball"></i>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-3">
-                <div class="fact">
-                    <h2>12K</h2>
-                    <p>Transactions  <br> per hour</p>
-                    <i class="ti-panel"></i>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-3">
-                <div class="fact">
-                    <h2>5B</h2>
-                    <p>Largest <br> Transactions</p>
-                    <i class="ti-stats-up"></i>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-3">
-                <div class="fact">
-                    <h2>240</h2>
-                    <p>Years <br> of Experience</p>
-                    <i class="ti-user"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Fact section end -->
-
-
-<!-- Team section -->
-<section class="team-section spad">
-    <div class="container">
-        <div class="section-title text-center">
-            <h2>Meet Our Team</h2>
-            <p>Our experts in the field of crypto currency can always help you with any of your questions!</p>
-        </div>
-    </div>
-    <div class="team-members clearfix">
-        <!-- Team member -->
-        <div class="member">
-            <div class="member-text">
-                <div class="member-img set-bg" data-setbg="img/member/1.jpg"></div>
-                <h2>Tom Binegar</h2>
-                <span>Business Development</span>
-            </div>
-            <div class="member-social">
-                <a href=""><i class="fa fa-facebook"></i></a>
-                <a href=""><i class="fa fa-linkedin"></i></a>
-                <a href=""><i class="fa fa-twitter"></i></a>
-            </div>
-            <div class="member-info">
-                <div class="member-img mf set-bg" data-setbg="img/member/1.jpg"></div>
-                <div class="member-meta">
-                    <h2>Tom Binegar</h2>
-                    <span>Marketing Director</span>
-                </div>
-                <p>Jackson Nash is a full-time faculty member of the Marketing and Behavioural Science Division at the Sauder School of Business at UBC. He leads the Entrepreneurship Group, in the undergraduate and graduate programs, teaching actively in both of these.</p>
-            </div>
-        </div>
-        <!-- Team member -->
-        <div class="member">
-            <div class="member-text">
-                <div class="member-img set-bg" data-setbg="img/member/2.jpg"></div>
-                <h2>Jackson Nash</h2>
-                <span>Business Development</span>
-            </div>
-            <div class="member-social">
-                <a href=""><i class="fa fa-facebook"></i></a>
-                <a href=""><i class="fa fa-linkedin"></i></a>
-                <a href=""><i class="fa fa-twitter"></i></a>
-            </div>
-            <div class="member-info">
-                <div class="member-img mf set-bg" data-setbg="img/member/2.jpg"></div>
-                <div class="member-meta">
-                    <h2>Jackson Nash</h2>
-                    <span>Marketing Director</span>
-                </div>
-                <p>Jackson Nash is a full-time faculty member of the Marketing and Behavioural Science Division at the Sauder School of Business at UBC. He leads the Entrepreneurship Group, in the undergraduate and graduate programs, teaching actively in both of these.</p>
-            </div>
-        </div>
-        <!-- Team member -->
-        <div class="member">
-            <div class="member-text">
-                <div class="member-img set-bg" data-setbg="img/member/3.jpg"></div>
-                <h2>Tom Binegar</h2>
-                <span>Business Development</span>
-            </div>
-            <div class="member-social">
-                <a href=""><i class="fa fa-facebook"></i></a>
-                <a href=""><i class="fa fa-linkedin"></i></a>
-                <a href=""><i class="fa fa-twitter"></i></a>
-            </div>
-            <div class="member-info">
-                <div class="member-img mf set-bg" data-setbg="img/member/3.jpg"></div>
-                <div class="member-meta">
-                    <h2>Aaron Ballance</h2>
-                    <span>Ceo Bitcoin</span>
-                </div>
-                <p>Jackson Nash is a full-time faculty member of the Marketing and Behavioural Science Division at the Sauder School of Business at UBC. He leads the Entrepreneurship Group, in the undergraduate and graduate programs, teaching actively in both of these.</p>
-            </div>
-        </div>
-        <!-- Team member -->
-        <div class="member">
-            <div class="member-text">
-                <div class="member-img set-bg" data-setbg="img/member/4.jpg"></div>
-                <h2>Melissa Barth</h2>
-                <span>Product Manager</span>
-            </div>
-            <div class="member-social">
-                <a href=""><i class="fa fa-facebook"></i></a>
-                <a href=""><i class="fa fa-linkedin"></i></a>
-                <a href=""><i class="fa fa-twitter"></i></a>
-            </div>
-            <div class="member-info">
-                <div class="member-img mf set-bg" data-setbg="img/member/4.jpg"></div>
-                <div class="member-meta">
-                    <h2>Melissa Barth</h2>
-                    <span>Product Manager</span>
-                </div>
-                <p>Jackson Nash is a full-time faculty member of the Marketing and Behavioural Science Division at the Sauder School of Business at UBC. He leads the Entrepreneurship Group, in the undergraduate and graduate programs, teaching actively in both of these.</p>
-            </div>
-        </div>
-        <!-- Team member -->
-        <div class="member">
-            <div class="member-text">
-                <div class="member-img set-bg" data-setbg="img/member/5.jpg"></div>
-                <h2>Katy Abrams</h2>
-                <span>Head of Design</span>
-            </div>
-            <div class="member-social">
-                <a href=""><i class="fa fa-facebook"></i></a>
-                <a href=""><i class="fa fa-linkedin"></i></a>
-                <a href=""><i class="fa fa-twitter"></i></a>
-            </div>
-            <div class="member-info">
-                <div class="member-img mf set-bg" data-setbg="img/member/5.jpg"></div>
-                <div class="member-meta">
-                    <h2>Katy Abrams</h2>
-                    <span>Head of Design</span>
-                </div>
-                <p>Jackson Nash is a full-time faculty member of the Marketing and Behavioural Science Division at the Sauder School of Business at UBC. He leads the Entrepreneurship Group, in the undergraduate and graduate programs, teaching actively in both of these.</p>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Team section -->
-
-
-<!-- Review section -->
-<section class="review-section spad">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 push-8">
-                <img src="img/quote.png" alt="" class="quote mb-5">
-                <div class="review-text-slider owl-carousel">
-                    <div class="review-text">
-                        <p>"Bitcoin is exciting because it shows how cheap it can be. Bitcoin is better than currency in that you don’t have to be physically in the same place and, of course, for large transactions, currency can get pretty inconvenient.”</p>
-                    </div>
-                    <div class="review-text">
-                        <p>"Bitcoin is exciting because it shows how cheap it can be. Bitcoin is better than currency in that you don’t have to be physically in the same place and, of course, for large transactions, currency can get pretty inconvenient.”</p>
-                    </div>
-                    <div class="review-text">
-                        <p>"Bitcoin is exciting because it shows how cheap it can be. Bitcoin is better than currency in that you don’t have to be physically in the same place and, of course, for large transactions, currency can get pretty inconvenient.”</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 pr-0 pull-3">
-                <div class="review-meta-slider owl-carousel pt-5">
-                    <div class="author-meta">
-                        <div class="author-avatar set-bg" data-setbg="img/review/1.jpg"></div>
-                        <div class="author-name">
-                            <h4>Aaron Ballance</h4>
-                            <p>Ceo Bitcoin</p>
-                        </div>
-                    </div>
-                    <div class="author-meta">
-                        <div class="author-avatar set-bg" data-setbg="img/review/2.jpg"></div>
-                        <div class="author-name">
-                            <h4>Jackson Nash</h4>
-                            <p>Head of Design</p>
-                        </div>
-                    </div>
-                    <div class="author-meta">
-                        <div class="author-avatar set-bg" data-setbg="img/review/3.jpg"></div>
-                        <div class="author-name">
-                            <h4>Katy Abrams</h4>
-                            <p>Product Manager</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Review section end -->
-
-
-<!-- Newsletter section -->
-<section class="newsletter-section gradient-bg">
-    <div class="container text-white">
-        <div class="row">
-            <div class="col-lg-7 newsletter-text">
-                <h2>Subscribe to our Newsletter</h2>
-                <p>Sign up for our weekly industry updates, insider perspectives and in-depth market analysis.</p>
-            </div>
-            <div class="col-lg-5 col-md-8 offset-lg-0 offset-md-2">
-                <form class="newsletter-form">
-                    <input type="text" placeholder="Enter your email">
-                    <button>Get Started</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Newsletter section end -->
-
-
-
 <!-- Blog section -->
-<section class="blog-section spad">
+<section class="about-section spad">
     <div class="container">
-        <div class="section-title text-center">
-            <h2>Latest News</h2>
-            <p>Bitcoin is the simplest way to exchange money at very low cost.</p>
+        <div class="section-title">
+            <strong><span class='text-white' style='font-size:46px;'> Marketplace</span></strong>
+            <p class='text-white' >Bitcoin is the simplest way to exchange money at very low cost.</p>
         </div>
         <div class="row">
             <!-- blog item -->
@@ -483,60 +537,122 @@
 <footer class="footer-section">
     <div class="container">
         <div class="row spad">
-            <div class="col-md-6 col-lg-3 footer-widget">
-                <img src="img/logo.png" class="mb-4" alt="">
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia dese mollit anim id est laborum.</p>
-                <span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
+            <div class="col-md-12 col-lg-12 footer-widget text-center">
+                <strong><span  style='font-size:46px;color:black'> Join HardFork Community</span></strong>
+                
             </div>
-            <div class="col-md-6 col-lg-2 offset-lg-1 footer-widget">
-                <h5 class="widget-title">Resources</h5>
-                <ul>
-                    <li><a href="#">How to Buy Coin</a></li>
-                    <li><a href="#">Coin Overview</a></li>
-                    <li><a href="#">Blog News</a></li>
-                    <li><a href="#">How to Sell Coin</a></li>
-                    <li><a href="#">Purchase Theme</a></li>
-                </ul>
-            </div>
-            <div class="col-md-6 col-lg-2 offset-lg-1 footer-widget">
-                <h5 class="widget-title">Quick Links</h5>
-                <ul>
-                    <li><a href="#">Network Stats</a></li>
-                    <li><a href="#">Block Explorers</a></li>
-                    <li><a href="#">Governance</a></li>
-                    <li><a href="#">Exchange Markets</a></li>
-                    <li><a href="#">Get Theme</a></li>
-                </ul>
-            </div>
-            <div class="col-md-6 col-lg-3 footer-widget pl-lg-5 pl-3">
-                <h5 class="widget-title">Follow Us</h5>
+            <div class="col-md-12 col-lg-12 footer-widget text-center pl-lg-12 pl-12">
                 <div class="social">
-                    <a href="" class="facebook"><i class="fa fa-facebook"></i></a>
-                    <a href="" class="google"><i class="fa fa-google-plus"></i></a>
-                    <a href="" class="instagram"><i class="fa fa-instagram"></i></a>
-                    <a href="" class="twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="" class="bg-dark"><i class="fa fa-facebook text-white "></i></a>
+                    <a href="" class="bg-dark"><i class="fa fa-google-plus text-white"></i></a>
+                    <a href="" class="bg-dark"><i class="fa fa-instagram text-white"></i></a>
+                    <a href="" class="bg-dark"><i class="fa fa-twitter text-white"></i></a>
                 </div>
+            </div>
+        </div>
+        <div class="row ">
+         
+            <div class="col-md-3 col-lg-3  footer-widget">
+                <h5 class="widget-title " style='color:black;'>Resources</h5>
+                <ul>
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Become a partner</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-lg-3 footer-widget">
+                <h5 class="widget-title" style='color:black;'>The loop</h5>
+                <ul>
+                    <li><a href="#">HardFork Token</a></li>
+                    <li><a href="#">Suggest feature</a></li>
+                    <li><a href="#">HardFork protocol</a></li>
+                    <li><a href="#">Subscribe</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-lg-3  footer-widget">
+                <h5 class="widget-title" style='color:black;'>My Account</h5>
+                <ul>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Favorites</a></li>
+                    <li><a href="#">Watchlist</a></li>
+                    <li><a href="#">My Collections</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-lg-3  footer-widget">
+                <h5 class="widget-title" style='color:black;'>Company</h5>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
             </div>
         </div>
         <div class="footer-bottom">
             <div class="row">
                 <div class="col-lg-4 store-links text-center text-lg-left pb-3 pb-lg-0">
-                    <a href=""><img src="img/appstore.png" alt="" class="mr-2"></a>
-                    <a href=""><img src="img/playstore.png" alt=""></a>
-                </div>
-                <div class="col-lg-8 text-center text-lg-right">
-                    <ul class="footer-nav">
-                        <li><a href="">DPA</a></li>
-                        <li><a href="">Terms of Use</a></li>
-                        <li><a href="">Privacy Policy </a></li>
-                        <li><a href="">support@company.com</a></li>
-                        <li><a href="">(123) 456-7890</a></li>
-                    </ul>
+                    &#169; {{date('Y')}} HardFork
                 </div>
             </div>
         </div>
     </div>
 </footer>
+<script>
+
+(function () {
+  const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+
+  //I'm adding this section so I don't have to keep updating this pen every year :-)
+  //remove this if you don't need it
+  let today = new Date(),
+      dd = String(today.getDate()).padStart(2, "0"),
+      mm = String(today.getMonth() + 1).padStart(2, "0"),
+      yyyy = today.getFullYear(),
+      nextYear = yyyy + 1,
+      dayMonth = "09/30/",
+      birthday = dayMonth + yyyy;
+  
+  today = mm + "/" + dd + "/" + yyyy;
+  if (today > birthday) {
+    birthday = dayMonth + nextYear;
+  }
+  //end
+  
+  
+  const countDown = new Date(birthday).getTime(),
+      x = setInterval(function() {    
+
+        const now = new Date().getTime(),
+              distance = countDown - now;
+             const hour_a = Math.floor((distance % (day)) / (hour));
+             const   minute_a = Math.floor((distance % (hour)) / (minute));
+             const   second_a = Math.floor((distance % (minute)) / (second));
+
+        // document.getElementById("days").innerText = Math.floor(distance / (day)),
+          document.getElementById("hours").innerText = (hour_a < 10) ? ('0' + hour_a) : hour_a,
+          document.getElementById("hours1").innerText = (hour_a < 10) ? ('0' + hour_a) : hour_a,
+          document.getElementById("hours2").innerText = (hour_a < 10) ? ('0' + hour_a) : hour_a,
+          document.getElementById("minutes").innerText = (minute_a < 10) ? ('0' + minute_a) : minute_a,
+          document.getElementById("minutes1").innerText =(minute_a < 10) ? ('0' + minute_a) : minute_a,
+          document.getElementById("minutes2").innerText = (minute_a < 10) ? ('0' + minute_a) : minute_a,
+          document.getElementById("seconds").innerText = (second_a < 10) ? ('0' + second_a) : second_a;
+          document.getElementById("seconds1").innerText =(second_a < 10) ? ('0' + second_a) : second_a;
+          document.getElementById("seconds2").innerText = (second_a < 10) ? ('0' + second_a) : second_a;
+
+        //do something later when date is reached
+        if (distance < 0) {
+          document.getElementById("headline").innerText = "It's my birthday!";
+          document.getElementById("countdown").style.display = "none";
+          document.getElementById("content").style.display = "block";
+          clearInterval(x);
+        }
+        //seconds
+      }, 0)
+  }());
+</script>
 @endsection
